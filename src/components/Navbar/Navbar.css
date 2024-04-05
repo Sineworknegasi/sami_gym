@@ -1,0 +1,93 @@
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5rem;
+    background: linear-gradient(to right, #141B22 60%, #FD3D0C 30%);
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+.GymLogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+} 
+.GymLogo h1 {
+    font-size: 2rem;
+}
+.GymLogo h1 span {
+    color: #FD3D0C;
+}
+.Nav_links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+.Nav_links li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+    transition: 0.4s;
+}
+.Nav_links li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2.5px;
+    background: black;
+    transition: 0.8s ease-out;
+}
+.Nav_links li a:hover::after {
+    width: 100%;
+}
+.Nav_links li a:hover {
+    color: black;
+}
+.Mobile_menu {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .GymLogo img {
+        display: none;
+    }
+    .GymLogo h1, .GymLogo h1 span{
+        font-size: 1.3rem;
+    }
+    .Navbar {
+        padding: 0.5rem 2rem;
+        justify-content: space-between;
+    }
+    .Nav_links {
+        background: linear-gradient(to right, #141B22 15%, #FD3D0C 0%);
+        padding: 2rem;
+        justify-content: center;
+        top: -12px;
+        right: -200%;
+        width: 361px;
+        border-bottom-left-radius: 15px;
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        color: #FD3D0C;
+        transition: 0.8s;
+    }
+    .active {
+        right: 0;
+    }
+    .Mobile_menu {
+        display: block;
+        font-size: 1.5rem;
+        color: white;
+    }
+}
