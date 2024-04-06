@@ -22,13 +22,13 @@ const Navbar = () => {
             </div>
             <ul className='Nav_links' id='navlink'>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">Program</a></li>
-                <li><a href="#services">Choose Us</a></li>
+                <li><a href="#about">AboutUs</a></li>
+                <li><a href="#services">Classes</a></li>
                 <li><a href="#portfolio">Pricing</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div className='Mobile_menu' id='menu'>
-            <i class="fa fa-bars fa-close" aria-hidden="true" onClick={toggle}></i>
+            <i class="fa fa-close fa-bars" aria-hidden="true" onClick={toggle}></i>
             </div>
         </nav>
     </section>

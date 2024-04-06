@@ -9,6 +9,7 @@
     left: 0;
     right: 0;
     z-index: 1000;
+    max-width: 2560px;
 }
 
 .GymLogo {
@@ -43,14 +44,14 @@
     display: block;
     width: 0;
     height: 2.5px;
-    background: var(--secondary-color);
+    background: var(--primary-color);
     transition: 0.8s ease-out;
 }
 .Nav_links li a:hover::after {
     width: 100%;
 }
 .Nav_links li a:hover {
-    color: var(--secondary-color);
+    color: var(--primary-colorr);
 }
 .Mobile_menu {
     display: none;
@@ -74,19 +75,19 @@
         padding: 2rem;
         justify-content: center;
         top: -12px;
-        bottom: 0;
         right: 0;
         left: 0;
-        width: 361px;
+        height: 600px;
         border-bottom-left-radius: 15px;
         margin-top: 4rem;
         display: flex;
         flex-direction: column;
         position: fixed;
         color: black;
-        transition: 0.8s;
+        transition: 0.8s ease-in;
         z-index: 2;
         background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 80%) no-repeat;
+        background: rgba(0, 0, 0, 0.5);
         z-index: 5;
     }
     .Nav_links li a::after {
@@ -101,7 +102,7 @@
         color: var(--primary-color);
     }
     .active {
-        left: 100%;
+        left: 1000%;
         z-index: 3;
     }
     .Mobile_menu {

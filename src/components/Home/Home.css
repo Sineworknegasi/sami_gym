@@ -8,6 +8,7 @@
     padding: 2.9rem 5rem;
     background:  linear-gradient(to right, var(--primary-color) 50%, var(--secondary-color) 0%);
     gap: 1rem;
+    max-width: 2560px;
 }
 .Home_Content {
     display: flex;

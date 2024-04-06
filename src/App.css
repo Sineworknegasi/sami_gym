@@ -3,7 +3,9 @@
 :root {
   --primary-color: #141B22;
   --secondary-color: #FD3D0C;
+  --btn-bg2: #FFEBE6;
   --font-1: "poppins", sans-serif;
+  
 }
 ::-webkit-scrollbar {
   width: 5px;
