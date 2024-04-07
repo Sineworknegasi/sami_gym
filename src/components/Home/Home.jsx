@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <section className='Home_container'>
         <div className='Home_Content'>
-            <h1><span>THE BEST</span>FITNESS CLUB</h1>
+            <h1>THE BEST FITNESS CLUB</h1>
             <h2>Work Hard To <br /> Get Better Life</h2>
             <p>Duis mollis felis quis libero dictum vehicula. Duis dictum lorem mi, a faucibus nisi eleifend eu.</p>
             <a href='#' className='Home_btn'>Get Started</a>

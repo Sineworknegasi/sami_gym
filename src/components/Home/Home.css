@@ -31,14 +31,35 @@
     color: white;
     padding:1rem;
     margin: 1rem 0;
+    position: relative;
+    z-index: 2;
 }
-.Home_Content h1 span {
+.Home_Content h1::after {
+    content: "";
+    display: block;
+    width: 45%;
+    top: 10%;
+    left: 0;
+    height: 80%;
+    position: absolute;
     background-color: #FD3D0C;
-    color: white;
-    padding: 5px;
     border-radius: 5px;
-    margin: 0 5px;
+    z-index: -1;
+    animation: RightToLeft 3s linear infinite;
 } 
+
+@keyframes RightToLeft {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 54%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
 .Home_Content h2 {
     font-size: 5rem;
     text-align: left;
