@@ -1,0 +1,111 @@
+.Testimonial_Section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:4rem 8rem;
+}
+
+.Testimonial {
+    text-align: center;
+    padding: 3rem 8rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Testimonial h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    background-color: var(--btn-bg2);
+    width: fit-content;
+}
+
+.Testimonial h2 {
+    font-size: 2.5rem;
+    width: fit-content;
+}
+
+.customers {
+    display: flex;
+    padding: 1.5rem;
+    width: 95%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.5rem;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+.customers p {
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: grey;
+}
+.Customers_image {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+}
+.Customers_image p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    width: fit-content;
+}
+.Customers_image strong {
+    color: white;
+}
+.customers img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid var(--secondary-color);
+    padding: 0.5rem;
+}
+.Star {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding:1rem 0; 
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    color: #F9BC08;
+}
+
+
+@media screen and (max-width: 768px) {
+    .Testimonial_Section {
+        padding: 3rem;
+    }
+    .Testimonial h1 {
+        font-size: 1.2rem;
+    }
+    .Testimonial h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .Testimonial{
+        padding: 1rem;
+    }
+    .Testimonial_Section {
+        padding: 1rem;
+    }
+    .Testimonial h1 {
+        font-size: 1.2rem;
+    }
+    .Testimonial h2 {
+        font-size: 2rem;
+    }
+}

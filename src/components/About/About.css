@@ -57,8 +57,8 @@
 }
 
 .About_content h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 500;
     color: var(--secondary-color);
     background-color: var(--btn-bg2);
     padding: 1rem;
@@ -66,9 +66,8 @@
 }
 
 .About_content h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: normal;
-    font-family: 'roboto', sans-serif;
 }
 
 .About_content p {

@@ -1,0 +1,120 @@
+.Schedule Section {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.Schedule_Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 2rem;
+    padding-bottom: 15rem;
+}
+
+.Schedule_Content h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    background-color: #FFEBE6;
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+
+.Schedule_Content h1 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 45px;
+    color: #10161b;
+    font-weight: 800;
+}
+
+table {
+    font-family: 'poppins', sans-serif;
+}
+
+
+td,
+th {
+    border: 1px solid rgb(202, 202, 202);
+    text-align: left;
+    padding: 1.2rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.3s ease-in;
+}
+
+td:hover{
+    border: 1px solid var(--secondary-color);
+}
+
+tr td .trainer {
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.7rem;
+    color: var(--secondary-color);
+}
+tr th {
+    font-size: 1rem;
+    background-color: #10161b;
+    color: white;
+    font-weight: 900;
+}
+
+
+tr:first-of-type {
+    font-size: 0.8rem;
+    background-color: #10161b;
+    color: white;
+}
+
+td:first-of-type {
+    font-weight: 700;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+    .Schedule_Content {
+        
+    }
+    .Schedule_Content h2 {
+        font-size: 2rem;
+    }
+    .Schedule_Content h1 {
+        font-size: 1.5rem;
+    }
+    table {
+        overflow: auto;
+        height: fit-content;
+        margin-top: 8rem;
+    }
+    td,th {
+        font-size: 0.7rem;
+        padding: 0.5rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .Schedule_Content {
+        
+    }
+    .Schedule_Content h2 {
+        font-size: 2rem;
+    }
+    .Schedule_Content h1 {
+        font-size: 1.5rem;
+    }
+    table {
+        transform: rotate(90deg);
+        overflow: auto;
+        height: fit-content;
+        margin-top: 8rem;
+    }
+    td,th {
+        font-size: 0.7rem;
+        padding:0.2rem;
+    }
+}

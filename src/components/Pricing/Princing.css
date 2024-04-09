@@ -1,0 +1,175 @@
+.Princing_Section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    height: 100vh;
+    padding-bottom: 8rem;
+}
+
+.Princing_Section h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    background-color: var(--btn-bg2);
+    padding: 1rem;
+    width: 250px;
+    text-align: center;
+    border-radius: 5px;
+    align-items: center;
+    font-family: "poppins", sans-serif;
+}
+.Princing_Section h1 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.Princing_Content {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 6rem ;
+}
+
+.Princing_Box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Princing_Box_Content_Title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.Princing_Box_Content_Price {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.Princing_Box ul {
+    padding: 2rem;
+    width: 100%;
+}
+.Princing_Box ul li {
+    font-family: "roboto", sans-serif;
+    list-style: none;
+    font-size: 11px;
+    font-weight: 300;  
+    color: grey;
+    line-height: 1.5rem; 
+    
+}
+.pricing_check {
+    color: #7CE399;
+}
+
+
+.Princing_Box_Content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+.Princing_Box:first-of-type .Princing_Box_Content {
+    background-color: var(--secondary-color);
+    box-shadow: 2px 1px 25px gray;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.Princing_Box:nth-of-type(2) .Princing_Box_Content {
+    box-shadow: 0 1px 15px gray;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+.Princing_Box:nth-last-of-type(1) .Princing_Box_Content {
+    box-shadow: 0 0 10px gray;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    background-color: white;
+    width: 100%;
+}
+
+.Princing_Box button {
+    background-color: transparent;
+    color: var(--secondary-color);
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid var(--secondary-color);
+    position: relative;
+    transition: 0.3s;
+}
+
+.Princing_Box button::before{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: " ";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+    z-index: -1;
+    opacity: 0;
+}
+
+.Princing_Box button:hover::before {
+    height: 100%;
+    opacity: 1;
+}
+
+.Princing_Box button a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+@media screen and (max-width: 769px) {
+    .Princing_Section {
+        margin-top: 17rem;
+    }
+    .Princing_Section h2 {
+        font-size: 1.5rem;
+    }
+    .Princing_Section h1 {
+        font-size: 2rem;
+    }
+    .Princing_Content {
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .Princing_Section {
+        margin-top: 17rem;
+    }
+    .Princing_Section h2 {
+        font-size: 1rem;
+    }
+    .Princing_Section h1 {
+        font-size: 1.5rem;
+    }
+    .Princing_Content {
+        flex-direction: column;
+        padding: 0;
+    }
+}

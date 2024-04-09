@@ -1,0 +1,167 @@
+.Statstics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 8rem;
+    background-color: var(--primary-color);
+    height: 100vh;
+    gap: 2rem;
+}
+
+.Stat_detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 60%;
+    border-radius: 15px;
+    transition: all 0.8s ease-in;
+    cursor:pointer;
+}
+.Stat_detail h2 {
+    font-size: 1.5rem;
+    width: max-content;
+    text-transform: uppercase;
+    padding: 1rem;
+    color: var(--secondary-color);
+    background-color: var(--btn-bg1);
+    font-weight: 500;
+}
+
+.Stat_detail h1 {
+    font-size: 3rem;
+    line-height:normal;
+}
+
+.Stat_detail p {
+    font-size: 1rem;
+    padding: 1rem;
+    color: grey;
+}
+.Stat_detail .Line {
+    width: 95%;
+    background-color: var(--btn-bg1);
+}
+.stat_percent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.stat_percent #percent {
+    font-size: 1rem;
+}
+
+.Appointment {
+    height: 100%;
+    width: 60%;
+}
+.Appointment_detail {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 2rem;
+    width: 100%;
+    justify-content: left;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    transition: all 0.8s ease-in;
+    cursor:pointer;
+    background-color: #2C3239;
+    gap: 1rem;
+}
+.Appointment_detail h1 {
+    font-size: 2.5rem;
+    width: max-content;
+    text-transform: capitalize;
+    color: white;
+    font-weight:700;
+    margin: 1rem 0;
+    position: relative;
+}
+.Appointment_detail h1::after {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    bottom: 0;
+    left: 0;
+}
+.Appointment_detail input {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px solid var(--btn-bg1);
+    outline: none;
+    font-family: "poppins", sans-serif;
+    border-radius: 5px;
+}
+
+.Appointment_detail textarea {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px solid var(--btn-bg1);
+    outline: none;
+    font-family: "poppins", sans-serif;
+    border-radius: 5px;
+    resize: none;
+}
+
+.Appointment_detail button {
+    background-color: var(--secondary-color);
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+}
+
+.Appointment_detail button:hover{
+    background-color: var(--btn-bg1);
+}
+
+
+@media screen and (max-width: 768px) {
+    .Statstics {
+        margin-top: 20rem;
+        flex-direction: column;
+        align-items: center;
+        min-height: 200vh;
+    }
+   .Stat_detail {
+        width: 100%;
+    }
+    .Stat_detail h2 {
+        font-size: 1rem;
+        margin-top: 5rem;
+    }
+    .Stat_detail h1 {
+        font-size: 1.5rem;
+    } 
+    .Appointment {
+        width: 100%;
+    } 
+    .Appointment_detail input {
+        padding: 0.5rem;
+    }
+    .Appointment_detail h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .Statstics {
+        margin: 0;
+        margin-top: 20rem;
+        padding: 1rem;
+    }
+}

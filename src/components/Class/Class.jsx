@@ -1,11 +1,13 @@
 import React from "react";
 import { CgGym } from "react-icons/cg";
 import { Execise } from "../file/Exercise";
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
 import "./Class.css";
 
 const Exercises = Execise.map((item) => {
     return (
-        <div className="Class_name_card">
+        <div className="Class_name_card" >
         <img
           src={item.image}
           alt="Gym_image"
@@ -35,7 +37,7 @@ const Class = () => {
         <h2>Our Classes</h2>
         <h1>Fitness Classes For Every Goal</h1>
         <div className="Class_names">
-            {Exercises}
+          {Exercises}
         </div>
       </div>
     </section>

@@ -1,11 +1,7 @@
 import React from 'react';
-import { FaBarsStaggered } from "react-icons/fa6";
-import { IoCloseSharp } from "react-icons/io5";
 import './Navbar.css';
 
 const toggle = () => {
-  const nav = document.querySelector('.Navbar');
-  const menu = document.getElementById('menu');
   const navlink = document.getElementById('navlink');
   const toggles_change = document.querySelector('i');
   navlink.classList.toggle('active');
