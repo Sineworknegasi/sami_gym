@@ -3,7 +3,8 @@ import './About.css'
 
 const About = () => {
   return (
-    <section className='AboutUs'>
+    <section className='AboutUs_container'>
+        <div className='AboutUs'>
         <div className='About_img'>
             <div className='circle1'>
                 <div className='circle2'>
@@ -25,6 +26,7 @@ const About = () => {
                 <a href='#' className='About_btn'>Explore More</a>
             </div>
         </div>
+    </div>
     </section>
   )
 }
