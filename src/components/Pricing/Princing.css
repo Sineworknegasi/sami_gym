@@ -1,11 +1,16 @@
+.Princing_sections_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .Princing_Section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 5rem;
-    height: 100vh;
     padding-bottom: 8rem;
+    max-width: 1440px;
 }
 
 .Princing_Section h2 {
@@ -19,24 +24,22 @@
     border-radius: 5px;
     align-items: center;
     font-family: "poppins", sans-serif;
+    margin: 2rem;
 }
 .Princing_Section h1 {
     font-size: 2.5rem;
     color: black;
-    margin-bottom: 1rem;
 }
 
 .Princing_Content {
-    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
-    padding: 0 6rem ;
 }
 
 .Princing_Box {
-    width: 100%;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,7 +55,7 @@
 }
 
 .Princing_Box ul {
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
 }
 .Princing_Box ul li {
@@ -72,7 +75,6 @@
 .Princing_Box_Content {
     display: flex;
     flex-direction: column;
-    padding: 0 2rem;
 }
 
 .Princing_Box:first-of-type .Princing_Box_Content {
@@ -102,7 +104,7 @@
 .Princing_Box button {
     background-color: transparent;
     color: var(--secondary-color);
-    width: 70%;
+    width: 100%;
     border: none;
     border-radius: 5px;
     padding: 1rem 2rem;
@@ -143,24 +145,28 @@
 }
 
 @media screen and (max-width: 769px) {
-    .Princing_Section {
-        margin-top: 17rem;
-    }
     .Princing_Section h2 {
         font-size: 1.5rem;
     }
     .Princing_Section h1 {
         font-size: 2rem;
+        text-align: center;
     }
     .Princing_Content {
-        flex-direction: column;
+        flex-direction: row;
         padding: 0;
+    }
+    .Princing_Box{
+        width: 100%;
+    }
+    .Princing_Box bottom {
+        width: 100%;
     }
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:428px) {
     .Princing_Section {
-        margin-top: 17rem;
+        margin-top: 1rem;
     }
     .Princing_Section h2 {
         font-size: 1rem;
@@ -171,5 +177,6 @@
     .Princing_Content {
         flex-direction: column;
         padding: 0;
+        width: 95%;
     }
 }

@@ -3,7 +3,8 @@ import "./OurStatics.css";
 
 const OurStatics = () => {
   return (
-    <section className="Statstics">
+    <section className="Stats_section">
+      <div className="Statstics">
       <div className="Stat_detail">
         <h2>Our Statics</h2>
         <h1>We are Best In Our Classe</h1>
@@ -32,6 +33,7 @@ const OurStatics = () => {
           <button>SUBMIT NOW</button>
         </div>
       </div>
+    </div>
     </section>
   );
 };

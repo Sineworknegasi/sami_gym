@@ -1,12 +1,18 @@
+.Stats_section {
+    background-color: var(--primary-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .Statstics {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 0 8rem;
-    background-color: var(--primary-color);
-    height: 100vh;
+    padding: 2rem 8rem;
     gap: 2rem;
+    max-width: 1440px;
 }
 
 .Stat_detail {
@@ -132,23 +138,21 @@
 
 @media screen and (max-width: 768px) {
     .Statstics {
-        margin-top: 20rem;
         flex-direction: column;
         align-items: center;
-        min-height: 200vh;
     }
    .Stat_detail {
         width: 100%;
     }
     .Stat_detail h2 {
         font-size: 1rem;
-        margin-top: 5rem;
     }
     .Stat_detail h1 {
         font-size: 1.5rem;
     } 
     .Appointment {
         width: 100%;
+        height: auto;
     } 
     .Appointment_detail input {
         padding: 0.5rem;
@@ -161,7 +165,7 @@
 @media screen and (max-width: 426px) {
     .Statstics {
         margin: 0;
-        margin-top: 20rem;
+        margin-top: 1rem;
         padding: 1rem;
     }
 }

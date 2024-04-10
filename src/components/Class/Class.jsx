@@ -32,7 +32,8 @@ const Exercises = Execise.map((item) => {
 
 const Class = () => {
   return (
-    <section className="Class_section">
+    <section className="Class_section_container">
+      <div className="Class_section">
       <div className="Class_Content">
         <h2>Our Classes</h2>
         <h1>Fitness Classes For Every Goal</h1>
@@ -40,6 +41,7 @@ const Class = () => {
           {Exercises}
         </div>
       </div>
+    </div>
     </section>
   );
 };

@@ -4,7 +4,8 @@ import { FaCheck } from "react-icons/fa";
 
 const Pricing = () => {
   return (
-    <section className="Princing_Section">
+    <section className="Princing_sections_container">
+      <div className="Princing_Section">
       <h2>PRICING TABLE</h2>
       <h1>Choose Your Princing Plan</h1>
       <div className="Princing_Content">
@@ -57,6 +58,7 @@ const Pricing = () => {
           </button>
         </div>
       </div>
+    </div>
     </section>
   );
 };

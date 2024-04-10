@@ -55,6 +55,13 @@ const Execise = [
         image: "https://th.bing.com/th/id/R.40b15d0950c265fc2cbb36a02de96b14?rik=ajRWpgjKN3lDVA&pid=ImgRaw&r=0",
         Rate: 65
     },
+    {
+        id: 9,
+        title: "Weight Lifting Classes ",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quibusdam.",
+        image: "https://th.bing.com/th/id/R.40b15d0950c265fc2cbb36a02de96b14?rik=ajRWpgjKN3lDVA&pid=ImgRaw&r=0",
+        Rate: 65
+    },
 ]
 
 export {Execise};

@@ -5,7 +5,6 @@ const toggle = () => {
   const navlink = document.getElementById('navlink');
   const toggles_change = document.querySelector('i');
   navlink.classList.toggle('active');
-  toggles_change.classList.toggle('fa-bars');
 }
 
 const Navbar = () => {
@@ -24,7 +23,7 @@ const Navbar = () => {
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div className='Mobile_menu' id='menu'>
-            <i class="fa fa-close fa-bars" aria-hidden="true" onClick={toggle}></i>
+            <i class="fa fa-bars" aria-hidden="true" onClick={toggle}></i>
             </div>
         </nav>
     </section>

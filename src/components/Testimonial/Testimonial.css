@@ -5,6 +5,7 @@
     padding:4rem 8rem;
 }
 
+
 .Testimonial {
     text-align: center;
     padding: 3rem 8rem;
@@ -85,7 +86,7 @@
 
 @media screen and (max-width: 768px) {
     .Testimonial_Section {
-        padding: 3rem;
+        padding: 1rem;
     }
     .Testimonial h1 {
         font-size: 1.2rem;

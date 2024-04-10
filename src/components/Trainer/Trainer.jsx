@@ -2,7 +2,7 @@ import React from "react";
 import { Slide } from "react-slideshow-image";
 import "./Trainer.css";
 import { FaSmile } from "react-icons/fa";
-import { IoFitness, IoBarbellSharp,  } from "react-icons/io5";
+import { IoFitness, IoBarbellSharp } from "react-icons/io5";
 import { GiCoffeeCup } from "react-icons/gi";
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 import "react-slideshow-image/dist/styles.css";
@@ -84,66 +84,68 @@ const trainer = TrainerCard.map((menu) => {
 
 const Example = () => {
   return (
-    <section className="Trainer_Section">
-      <div className="Satsfaction_Section">
-        <div className="Satsfation">
-          <div className="Satsfation_Content">
-            <h1>874</h1>
-            <div className="Sats_detail">
-              <FaSmile className="Sats_Emoji" />
-              <p>Happy Clinets</p>
+    <section className="Trainer_section_container">
+      <div className="Trainer_Section">
+        <div className="Satsfaction_Section">
+          <div className="Satsfation">
+            <div className="Satsfation_Content">
+              <h1>874</h1>
+              <div className="Sats_detail">
+                <FaSmile className="Sats_Emoji" />
+                <p>Happy Clinets</p>
+              </div>
             </div>
-          </div>
-          <div className="Satsfation_Content">
-            <h1>987</h1>
-            <div className="Sats_detail">
-              <IoFitness className="Sats_Emoji" />
-              <p>Total Clinets</p>
+            <div className="Satsfation_Content">
+              <h1>987</h1>
+              <div className="Sats_detail">
+                <IoFitness className="Sats_Emoji" />
+                <p>Total Clinets</p>
+              </div>
             </div>
-          </div>
-          <div className="Satsfation_Content">
-            <h1>587</h1>
-            <div className="Sats_detail">
-              <IoBarbellSharp className="Sats_Emoji" />
-              <p>Gym Equipment</p>
+            <div className="Satsfation_Content">
+              <h1>587</h1>
+              <div className="Sats_detail">
+                <IoBarbellSharp className="Sats_Emoji" />
+                <p>Gym Equipment</p>
+              </div>
             </div>
-          </div>
-          <div className="Satsfation_Content">
-            <h1>748</h1>
-            <div className="Sats_detail">
-              <GiCoffeeCup className="Sats_Emoji"/>
-              <p>Cup of Coffee</p>
+            <div className="Satsfation_Content">
+              <h1>748</h1>
+              <div className="Sats_detail">
+                <GiCoffeeCup className="Sats_Emoji" />
+                <p>Cup of Coffee</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="Trainer_Title">
-        <h2>BEST TRAINER</h2>
-        <h1>Our Professional Trainer</h1>
-      </div>
-      <div className="Slide_container">
-        <Slide
-          slidesToScroll={1}
-          slidesToShow={1}
-          responsive={[
-            {
-              breakpoint: 768, // Large screens (TVs, desktops)
-              settings: {
-                slidesToShow: 4,
-                slidesToScroll: 2
+        <div className="Trainer_Title">
+          <h2>BEST TRAINER</h2>
+          <h1>Our Professional Trainer</h1>
+        </div>
+        <div className="Slide_container">
+          <Slide
+            slidesToScroll={1}
+            slidesToShow={1}
+            responsive={[
+              {
+                breakpoint: 768, // Large screens (TVs, desktops)
+                settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 2,
+                },
               },
-            },
-            {
-              breakpoint: 320, // Large screens (TVs, desktops)
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
+              {
+                breakpoint: 320, // Large screens (TVs, desktops)
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                },
               },
-            },
-          ]}
-        >
-          {trainer}
-        </Slide>
+            ]}
+          >
+            {trainer}
+          </Slide>
+        </div>
       </div>
     </section>
   );

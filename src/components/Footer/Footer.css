@@ -1,0 +1,241 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.footer_container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    align-items: self-start;
+    max-width: 1400px;
+    padding: 2rem 2rem;
+}
+
+.myLogo h1 {
+    font-size: 2rem;
+}
+
+.myLogo h1 span {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.myLogo p {
+    color: grey;
+    font-size: 0.8rem;
+}
+
+.Programm {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.Programm .Footer_time {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+
+
+/*Ourlinks*/
+
+.Ourlinks {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    line-height: 12px;
+    justify-content: center;
+    align-items: self-start;
+    gap: 1rem;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    color: white;
+    text-transform: capitalize;
+    line-height: 12px;
+}
+
+.footer h3::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    margin-top: 0.5rem;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    color: gray;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.Ourlinks {
+    padding: 0 2rem;
+}
+.Ourlinks ul li {
+    list-style: none;
+    padding: 0.5rem 0;
+}
+
+.Ourlinks ul li a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: gray;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+/*Footer */
+.Contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.Contact ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Contact p {
+    font-size: 0.8rem;
+    color: gray;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.Contact ul li {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Contact .FooterIcon {
+    font-size: 2.2rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+}
+
+.footer .Footer_mail {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+
+.Footer_mail input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.Footer_mail input:focus {
+    border: none;
+    outline: none;
+}
+
+.OurLetter p {
+    margin: 1rem 0;
+}
+
+.Footer_mail button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 60px;
+    height: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+}
+
+.Footer_mail button::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+    z-index: -1;
+}
+
+.Footer_Subs_icon {
+    background: transparent;
+    color: white;
+    z-index: 2;
+}
+
+.Footer_mail button:hover::after {
+    width: 0;
+    height: 0;
+}
+
+@media screen and (max-width: 769px) {
+    .footer_container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: self-start;
+        max-width: 1400px;
+        padding: 2rem 0;
+        margin: 1.5rem;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .footer {
+        width: 100%;
+    }
+    .myLogo {
+        padding: 0 2rem;
+    }
+    .footer_container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: self-start;
+        max-width: 1400px;
+        padding: 2rem 0;
+        margin: 1.5rem;
+        width: 100%;
+    }
+    .OurLetter {
+        padding: 0 2rem;
+    }
+}

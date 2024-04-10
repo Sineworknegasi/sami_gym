@@ -1,0 +1,120 @@
+.Blog_section {
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+
+}
+.Blog {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Blog h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: var(--btn-bg2);
+    color: var(--secondary-color);
+}
+.Blog h1 {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+.Blog_news {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.Blog_news_card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid rgb(179, 178, 178);
+    border-radius: 15px;
+    width: 300px;
+    transition: 0.5s;
+}
+.Blog_news_card:hover {
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+}
+.Blog_news_card_image {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+}
+.Blog_news_card_image img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.Blog_news_card_image .Blog_news_card_image_overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: max-content;
+    height: 2rem;
+    padding: 1.3rem;
+    color: white;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.Blog_news_card_content {
+    padding: 2rem 2rem;
+    width: 100%;
+}
+.Blog_news_card_content_title h3 {
+    color: black;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.Blog_news_card_content_title h3:hover {
+    color: var(--secondary-color);
+}
+
+.Blog_news_card_content_description p {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: grey;
+    line-height: 1rem;
+    width:100%;
+}
+.Blog_news_card_content a {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    transition: 0.2s;
+}
+
+.Blog_news_card_content a:hover {
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+    .Blog_news {
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width: 500px) {
+    .Blog_news {
+        grid-template-columns: auto;
+    }
+}
+
+

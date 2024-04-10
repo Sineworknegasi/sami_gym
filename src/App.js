@@ -10,6 +10,8 @@ import Pricing from './components/Pricing/Pricing';
 import OurStatics from './components/Ourstatics/OurStatics';
 import Testimonial from './components/Testimonial/Testimonial';
 import Mobile_app from './components/Mobile_app/Mobile_app';
+import Blog from './components/Blog/Blog';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
     <OurStatics/>
     <Testimonial/>
     <Mobile_app/>
+    <Blog/>
+    <Footer/>
     </>
   );
 }

@@ -38,16 +38,22 @@ const customers = [
 const customercomment = customers.map((customer) => {
   return (
     <div className="customers">
-        <div className="Customers_image">
-            <img src={customer.image} alt="" />
-            <div>
-            <strong>{customer.name}</strong>
-            <p>Our Client</p>
-            </div>
+      <div className="Customers_image">
+        <img src={customer.image} alt="" />
+        <div>
+          <strong>{customer.name}</strong>
+          <p>Our Client</p>
+        </div>
       </div>
       <div className="Comment_rate">
         <p>{customer.Comments}</p>
-        <div className="Star"><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/></div>
+        <div className="Star">
+          <FaStar />
+          <FaStar />
+          <FaStar />
+          <FaStar />
+          <FaStar />
+        </div>
       </div>
     </div>
   );
@@ -55,35 +61,37 @@ const customercomment = customers.map((customer) => {
 
 const Testimonial = () => {
   return (
-    <section className="Testimonial_Section">
-      <div className="Testimonial">
-        <h1>TestiMonial</h1>
-        <h2>What Our Clients Says</h2>
-      </div>
-      <div className="Testimonial_Content">
-        <Slide
-          slidesToScroll={1}
-          slidesToShow={1}
-          responsive={[
-            {
-              breakpoint: 768, // Large screens (TVs, desktops)
-              settings: {
-                slidesToShow: 4,
-                slidesToScroll: 2
-              },
-            },
-            {
-              breakpoint: 425, // Large screens (TVs, desktops)
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-              },
-            },
-          ]}
-        >
-          {customercomment}
-        </Slide>
+    <section className="Testimonial_Section_Container">
+      <div className="Testimonial_Section">
+        <div className="Testimonial">
+          <h1>TestiMonial</h1>
+          <h2>What Our Clients Says</h2>
         </div>
+        <div className="Testimonial_Content">
+          <Slide
+            slidesToScroll={1}
+            slidesToShow={1}
+            responsive={[
+              {
+                breakpoint: 768, // Large screens (TVs, desktops)
+                settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 2,
+                },
+              },
+              {
+                breakpoint: 425, // Large screens (TVs, desktops)
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                },
+              },
+            ]}
+          >
+            {customercomment}
+          </Slide>
+        </div>
+      </div>
     </section>
   );
 };

@@ -1,11 +1,17 @@
+.Class_section_container {
+    background-color: var(--primary-color);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .Class_section {
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
     text-align: center;
-    height: 100%;
-    background-color: var(--primary-color);
+    max-width: 1440px;
     padding: 0 6rem;
 }
 .Class_Content {
@@ -13,7 +19,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3rem;
+    padding: 1rem;
+
 }
 .Class_Content h2 {
     color: var(--secondary-color);
@@ -37,7 +44,7 @@
 .Class_names {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
 }
@@ -48,7 +55,7 @@
     justify-content: center;
     align-items: flex-start;
     background: white;
-    width: 24%;
+    width: 300px;
     border-radius: 15px;
     transition: all 0.8s ease-in;
     cursor:pointer;
@@ -140,7 +147,7 @@
         padding: 0;
     }
     .Class_name_card {
-        width: 32%;
+        width: 300px;
     }
     .Class_names {
         gap: 0.1;
@@ -152,7 +159,7 @@
         padding: 0;
     }
     .Class_name_card {
-        width: 48%;
+        width: 300px;
     }
     .Class_names {
         gap: 0.1;
@@ -176,9 +183,9 @@
         gap: 0.1;
     }
     .Class_Content h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .Class_Content h2 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
