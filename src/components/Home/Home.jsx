@@ -4,7 +4,8 @@ import { FaHeart } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <section className='Home_container'>
+    <section className='Home_container_section' id='Home'>
+      <div className='Home_container'>
         <div className='Home_Content'>
             <h1>THE BEST FITNESS CLUB</h1>
             <h2>Work Hard To <br /> Get Better Life</h2>
@@ -24,6 +25,7 @@ const Home = () => {
           </div>
             <img src="https://www.pngarts.com/files/6/Male-Fitness-PNG-Transparent-Image.png" alt=""/>
         </div>
+    </div>
     </section>
   )
 }

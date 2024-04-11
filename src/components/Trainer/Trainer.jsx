@@ -84,7 +84,7 @@ const trainer = TrainerCard.map((menu) => {
 
 const Example = () => {
   return (
-    <section className="Trainer_section_container">
+    <section className="Trainer_section_container" id="Trainer">
       <div className="Trainer_Section">
         <div className="Satsfaction_Section">
           <div className="Satsfation">

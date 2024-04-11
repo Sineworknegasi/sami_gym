@@ -3,7 +3,7 @@ import "./OurStatics.css";
 
 const OurStatics = () => {
   return (
-    <section className="Stats_section">
+    <section className="Stats_section" id="Contactus">
       <div className="Statstics">
       <div className="Stat_detail">
         <h2>Our Statics</h2>

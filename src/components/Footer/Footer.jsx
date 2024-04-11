@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import { WiTime4 } from "react-icons/wi";
+import { FaFacebook, FaTwitter, FaInstagram , FaTiktok} from "react-icons/fa";
 import { IoLocation } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
@@ -73,6 +74,15 @@ const Footer = () => {
               <button><FaGreaterThan className='Footer_Subs_icon'/></button>
               </div>
             </div>
+        </div>
+        <div className='black_footer'>
+          <p>Copyright © <span className='Sinework'>{new Date().getFullYear()}</span> Sami Gym. All Rights Reserved. Created by <span className='Sinework'>Sinework</span></p>
+          <div className='Social_medias'>
+            <a href='#www.facebook.com'><FaFacebook /></a>
+            <a href='#www.x.com'><FaTwitter /></a>
+            <a href='#'><FaInstagram/></a>
+            <a href='#'><FaTiktok /></a>
+          </div>
         </div>
     </section>
   )

@@ -32,7 +32,7 @@ const Exercises = Execise.map((item) => {
 
 const Class = () => {
   return (
-    <section className="Class_section_container">
+    <section className="Class_section_container" id="Class" >
       <div className="Class_section">
       <div className="Class_Content">
         <h2>Our Classes</h2>

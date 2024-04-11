@@ -1,6 +1,7 @@
 .footer {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--primary-color);
@@ -204,6 +205,24 @@
     height: 0;
 }
 
+.black_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.black_footer p {
+    font-size: 1rem;
+}
+.black_footer .Sinework {
+    color: var(--secondary-color);
+    font: 1rem;
+}
+
 @media screen and (max-width: 769px) {
     .footer_container {
         display: grid;
@@ -237,5 +256,12 @@
     }
     .OurLetter {
         padding: 0 2rem;
+    }
+    .black_footer {
+        flex-direction: column;
+    }
+    .black_footer p {
+        font-size: 0.8rem;
+        padding-bottom: 2rem;
     }
 }
