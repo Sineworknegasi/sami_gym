@@ -2,7 +2,7 @@
 
   _Your ultimate destination for achieving your fitness goals!_
 
-  ![Sami Gym Logo](link_to_logo)
+  ![Sami Gym Logo](https://getwallpapers.com/wallpaper/full/5/1/1/200264.jpg)
 
   🚀 Sami Gym is a versatile and customizable gym management system designed to streamline your gym operations and enhance member experience. Whether you're a gym owner, manager, or member, Sami Gym offers a range of features tailored to meet your needs. 🚀
 
