@@ -1,6 +1,3 @@
-Certainly! Here's a sample description for the Sami Gym README file on GitHub:
-
----
 
 # Sami Gym
 
